@@ -1,2 +1,1 @@
-# movie-tracker
-A restful API for a book directory
+#An API for student information
