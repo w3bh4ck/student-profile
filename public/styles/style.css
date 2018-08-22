@@ -1,12 +1,27 @@
 .main {
     background-color: rgba(32, 96, 64);
     width: 100%;
-    height: 100vh;
+    height: 60rem;
 }
 
 .student-form {
     background-color: rgba(179, 179, 179, 0.5);
     width: 100%;
-    height: 30rem;
     border-radius: 8px;
+    padding-bottom: 1rem;
+}
+
+label{
+    color: #ffffff;
+}
+
+.drop {
+    border-top-style: none;
+}
+
+#btn-register {
+    background-color: rgba(32, 96, 64);
+    border: none;
+    height: 3rem;
+    width: 7rem;
 }
