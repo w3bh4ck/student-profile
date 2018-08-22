@@ -11,6 +11,10 @@ let StudentSchema = mongoose.Schema({
         type: String,
         trim: true
     },
+    matricnum: {
+        type: String,
+        trim: true
+    },
     faculty: {
         type: String,
         trim: true,
@@ -22,6 +26,11 @@ let StudentSchema = mongoose.Schema({
         required: true
     },
     level: {
+        type: String,
+        trim: true,
+        required: true
+    },
+    mode: {
         type: String,
         trim: true,
         required: true

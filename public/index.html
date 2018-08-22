@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,67 +8,91 @@
     <script src="./utils/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="./utils/bootstrap-4.1.3-dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai|Concert+One|Hanalei+Fill|Jua|Orbitron|Patua+One|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai|Concert+One|Hanalei+Fill|Jua|Orbitron|Patua+One|Righteous"
+        rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Student Portal</title>
 </head>
+
 <body>
-   <div class="main">
-    <div class="col-md-6 offset-md-3 pt-5">
-        <div class="student-form">
-           
-
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    <div class="main">
+        <div class="col-md-6 offset-md-3 pt-5 pb-4 ">
+            <div class="student-form">
+                <h3 class="text-center text-white mt-4 pt-4">Register A New Student</h3>
+                <form class="mx-3">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="surename">Surname</label>
+                            <input type="text" class="form-control" id="surename" placeholder="Surname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="othernames">Other Names</label>
+                            <input type="text" class="form-control" id="othernames" placeholder="Other Names">
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <div class="form-group">
+                        <label for="matriculation">Matriculation Number</label>
+                        <input type="text" class="form-control" id="matriculation" placeholder="Matriculation Number...">
                     </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="faculty">Faculty</label>
+                            <select id="faculty" class="form-control drop">
+                                <option selected>Select Faculty...</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Sciences">Sciences</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Art/Humanities">Art/Humanities</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="department">Department</label>
+                            <select id="department" class="form-control drop">
+                                <option selected>Select Department...</option>
+                                <option value="Electrical Engineering">Electrical Engineering</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Political Science">Political Science</option>
+                                <option value="Pharmacy">Pharmacy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="level">Level</label>
+                            <select id="level" class="form-control drop">
+                                <option selected>Select Level...</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="mode">Mode Of Study</label>
+                            <select id="mode" class="form-control drop">
+                                <option selected>Select Mode of Study...</option>
+                                <option value="fulltime" >Fulltime</option>
+                                <option value="part time" >Part Time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                I agree to abide by all the rules and regulation
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                    <button type="submit" id="btn-register" class="btn btn-primary ">Register</button>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
-
-
+                </form>
+            </div>
         </div>
     </div>
-   </div>
 </body>
+
 </html>
